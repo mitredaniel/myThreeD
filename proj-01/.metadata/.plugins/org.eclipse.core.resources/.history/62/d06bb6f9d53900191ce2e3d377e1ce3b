@@ -1,0 +1,6 @@
+
+
+spring.application.name=threeD
+
+server.port=8082
+

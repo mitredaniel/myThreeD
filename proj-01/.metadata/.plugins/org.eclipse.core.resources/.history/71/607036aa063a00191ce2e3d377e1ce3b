@@ -1,0 +1,7 @@
+package com.threeD.service;
+
+public interface JobServiceInterface {
+	
+	void getAllJob();
+
+}

@@ -1,0 +1,19 @@
+
+
+spring.application.name=threeD
+
+server.port=8082
+
+# ------------------- DATABASE ---------------------
+
+spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver
+spring.datasource.url=jdbc:sqlserver://DANIEL-PC\\THREED:1533;databaseName=dbTest
+spring.datasource.username=threeD
+spring.datasource.password=dan
+
+#--------------------- JPA/HIBERNATE --------------
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=create
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.SQLServer2012Dialect
+
+

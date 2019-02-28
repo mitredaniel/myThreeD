@@ -1,0 +1,19 @@
+package com.threeD.service;
+
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
+
+import com.threeD.entity.JobEntity;
+
+
+@Repository(value="JobRepository")
+public interface JobRepository extends JpaRepository<JobEntity, Integer> {
+	
+	@Query("select j from JobEntity j where name(j.name) = :name")
+	public JobEntity findJobByName (@Param("name") String name);
+	
+
+}

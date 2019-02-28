@@ -1,0 +1,5 @@
+package com.threeD.service;
+
+public interface JobServiceInterface {
+
+}
